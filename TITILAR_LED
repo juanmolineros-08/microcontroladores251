@@ -1,5 +1,5 @@
 ;#######################################################
-;		   PROGRAMA PARA HACER TITILAR UNLED SIN DELAY
+;		   PROGRAMA PARA HACER TITILAR UN LED SIN DELAY
 ;#######################################################
 #include "p18f4550.inc"
   CONFIG  FOSC = INTOSC_HS      
