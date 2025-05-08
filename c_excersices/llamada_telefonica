@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#define PRECIO_MINUTO 45.48
+
+int main(void) {
+    int duracion;
+    double costo;
+
+    printf("¿Cuántos minutos duró la llamada? ");
+    if (scanf("%d", &duracion) != 1) {
+        fprintf(stderr, "Error: entrada no válida.\n");
+        return EXIT_FAILURE;
+    }
+
+    if (duracion < 0) {
+        printf("La duración no puede ser negativa.\n");
+        return EXIT_SUCCESS;
+    }
+
+    costo = (double)duracion * PRECIO_MINUTO;
+    printf("Costo total: %.2f pesos\n", costo);
+
+    return EXIT_SUCCESS;
+}
